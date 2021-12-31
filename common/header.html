@@ -1,0 +1,16 @@
+<script type="text/discourse-plugin" version="0.8">
+
+api.registerConnectorClass('above-main-container', 'abb-create-topic', {
+    tagName: "div.abb-create-topic",
+    setupComponent(args, component) {
+      component.set('hostname', window.location.hostname);
+      api.onPageChange((url) => {
+        
+      })
+    }
+  });
+</script>
+
+<script type="text/x-handlebars" data-template-name="/connectors/above-main-container/abb-create-topic">
+<div>create topic</div>
+</script>
